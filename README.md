@@ -79,4 +79,4 @@ puede dirigirse a [Deploying using GitHub Actions](https://docs.aws.amazon.com/s
 - [¿Qué es el AWS Serverless Application Model (AWS SAM)?](https://docs.aws.amazon.com/es_es/serverless-application-model/latest/developerguide/what-is-sam.html)
 - [GitHub Actions](https://docs.github.com/es/actions/quickstart)
 - [Using GitHub Actions to deploy serverless applications](https://aws.amazon.com/es/blogs/compute/using-github-actions-to-deploy-serverless-applications/)
-- [Deploying using GitHub Actions]((https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/deploying-using-github.html))
+- [Deploying using GitHub Actions](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/deploying-using-github.html)
