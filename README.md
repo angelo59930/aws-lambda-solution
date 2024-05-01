@@ -56,7 +56,11 @@ La solución implementada consta de los siguientes componentes:
 - **CloudFormation**: Plantilla que define los recursos necesarios para implementar la solución.
 - **GitHub Actions**: Flujo de trabajo que automatiza la implementación de la solución en AWS.
 - **Python**: Lenguaje de programación utilizado para el desarrollo de la función Lambda.
-  
+
+El template de AWS SAM se encarga de definir los recursos necesarios para implementar la solución. En este caso, se definen una función Lambda y un API Gateway.
+
+El api gateway se encarga de exponer la función Lambda para ser consumida por los clientes. La función Lambda procesa las peticiones GET y devuelve un mensaje de bienvenida.
+
 El flujo de trabajo de GitHub Actions se activa cuando se realiza un push en la rama main del repositorio. El flujo de trabajo se encarga de:
 1. Utilizar la versión de Python 3.8.
 2. Setear las credenciales de AWS.
@@ -65,6 +69,8 @@ El flujo de trabajo de GitHub Actions se activa cuando se realiza un push en la 
 
 ### Tener en cuenta
 - La plantilla de CloudFormation se encuentra en el archivo `template.yaml`.
+  En el archivo se definen los recursos necesarios para implementar la solución.
+  como la función Lambda, el API Gateway, donde se encuentra el handler del lambda, etc.
 - El código de la función Lambda se encuentra en el archivo `app/app.py`.
 - El pipeline se creo siguiendo la documentación oficial de GitHub Actions y AWS. Si se desea tener mas informacion
 puede dirigirse a [Deploying using GitHub Actions](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/deploying-using-github.html)
